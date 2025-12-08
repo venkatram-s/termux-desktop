@@ -118,7 +118,7 @@ If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninst
 
 ***VNC Client***
 
-Now you need a VNC client app to connect to server. I'm using this Android VNC client: [AVNC]([https://play.google.com/store/apps/details?id=com.realvnc.viewer.android](https://f-droid.org/en/packages/com.gaurav.avnc/)). You can use [TigerVNC](https://tigervnc.org/) if you're trying to connect to server by a computer (Windows or Linux).
+Now you need a VNC client app to connect to server. I'm using this Android VNC client: [AVNC](https://f-droid.org/en/packages/com.gaurav.avnc/). You can use [TigerVNC](https://tigervnc.org/) if you're trying to connect to server by a computer (Windows or Linux).
 
 Determine port number on which VNC server listens. It can be calculated like this: 5900 + {display number}. So for display 'localhost:1' the port will be 5901. <br />
 
