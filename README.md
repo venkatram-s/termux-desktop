@@ -1,18 +1,6 @@
-**`LAST Updated`** : `August 2023`
-
-> Unmaintained : Due to Termux not working properly on new Android versions and also Termux not getting maintained properly.
-
----
+**`Last Updated`** : `December 2025`
 
 ![logo](./previews/logo.png) <br />
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Maintained%3F-No-red?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/adi1090x/termux-desktop?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/adi1090x/termux-desktop?color=violet&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/adi1090x/termux-desktop?color=teal&style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/adi1090x/termux-desktop?style=for-the-badge">
-</p>
 
 Alright, Lets just get this straight, these are just some **dotfiles** & **scripts**, which will help you to setup a graphical environment in **termux**. I've tried to make it *as easy as possible* to setup a beautiful ***linux desktop on your android device*** with termux, So follow the steps and you'll end up making it look like this - <br />
 
@@ -26,9 +14,11 @@ Lets start from the beginning... <br />
 
 Termux is an *Android terminal emulator* and **Linux environment** app that works directly with **no rooting** or setup required. A minimal base system is installed automatically - additional packages are available using the *PKG/APT package manager*. More [Here](https://termux.com/)... <br />
 
-### How To install termux?
+### How To install Termux?
 
-You can install termux form google play store or from f-droid. <br />
+You can install Termux from **F-droid** (or) **Github** 
+
+> **Note:** The Google Play edition of Termux is an experimental, policy-compliant variant with restrictions and deviations from the main GitHub/F-Droid builds, making it unsuitable as a daily driver and prone to package issues.
 
 - Get it on [Github](https://github.com/termux/termux-app)
 - Download from [F-Droid](https://f-droid.org/packages/com.termux/) <br />
@@ -39,10 +29,16 @@ More information about installation is [here](https://wiki.termux.com/wiki/Main_
 
 Install `Termux` & `Termux:API` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
 
-> This setup is created and tested on :
+> Initially, This setup was created and tested on by [adi1090x](https://github.com/adi1090x) on:
 >
 > Device - **Redmi Note 9 Pro** <br />
 > Android - **Android 10 (Q)** <br />
+> CPU Type - **aarch64**
+
+> Recently, This setup was tested by me on:
+>
+> Device - **Oppo** <br />
+> Android - **Android 13 (ColorOS)** <br />
 > CPU Type - **aarch64**
 
 ### Installation
@@ -56,7 +52,7 @@ pkg upgrade && pkg install git
 
 - Clone this repository
 ```
-git clone --depth=1 https://github.com/adi1090x/termux-desktop.git
+git clone --depth=1 https://github.com/venkatram-s/termux-desktop.git
 ```
 
 > **Warning** : I'm assuming that you're doing this on a fresh termux install. If not, I'll suggest you to do so. However the `setup.sh` script backup every file it replace, It's still recommended that you manually backup your files in order to avoid conflicts. <br />
@@ -122,7 +118,7 @@ If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninst
 
 ***VNC Client***
 
-Now you need a VNC client app to connect to server. I'm using this Android VNC client: [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android). You can use [TigerVNC](https://tigervnc.org/) if you're trying to connect to server by a computer (Windows or Linux).
+Now you need a VNC client app to connect to server. I'm using this Android VNC client: [AVNC]([https://play.google.com/store/apps/details?id=com.realvnc.viewer.android](https://f-droid.org/en/packages/com.gaurav.avnc/)). You can use [TigerVNC](https://tigervnc.org/) if you're trying to connect to server by a computer (Windows or Linux).
 
 Determine port number on which VNC server listens. It can be calculated like this: 5900 + {display number}. So for display 'localhost:1' the port will be 5901. <br />
 
@@ -198,7 +194,7 @@ Well, These are some ideas or things you can do with termux desktop. From Learni
 
 - Penetration testing and Learn cyber security stuff
 
-> I'm not doing anything **illegal** or sponsoring any kind of **Hacking and Cracking**. *Termux is a powerful tool, use it with responsibilities.* <br />
+> I'm not doing anything **illegal** or sponsoring any kind of **Hacking and Cracking**. *Termux is a powerful tool, use it responsibly.* <br />
 
 |Metasploit - Sherlock - Socialfish - Zphisher - Sqlmap|
 |--|
@@ -254,14 +250,13 @@ Here's some shortcut keys you want to use to speed up your work. For more, `Righ
 ### Additional Tools
 
 You can install additional tools for termux, to make it visually look good.
-1. [Oh my zsh](https://github.com/adi1090x/termux-omz), Setup zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) framework. (Already Added in this setup)
-2. [Termux style](https://github.com/adi1090x/termux-style), Change color and fonts in termux.
+1. [Termux style](https://github.com/adi1090x/termux-style), Change color and fonts in termux.
 
 ### FYI
 
-- If you face any problem or get any error, you can create an issue & i'll try to help.
+- If you face any problem or get any error, you can create an issue & I'll try to help.
 - Edit `~/.local/bin/email` and put your Email ID and Password (Use an App password) to show unread mails on polybar.
 - You may need to edit some config files accoring to your need (`~/.mutt/muttrc`, `~/.gitconfig`)
-- Don't Email or DM me to ask how to hack, I ain't a Hacker. 
+- Don't Email or DM me to ask how to hack, I'm not a hacker. 
 - Have Fun, Share this repository with your friends.
 
