@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 ## Author  : Aditya Shakya (adi1090x)
+## Updated By: Venkatram S (venkatram-s)
 ## Mail    : adi1090x@gmail.com
 ## Github  : @adi1090x
 ## Twitter : @adi1090x
