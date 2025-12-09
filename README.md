@@ -37,7 +37,7 @@ Install `Termux` & `Termux:API` on your phone. It's recommended to install *Term
 
 > Recently, This setup was tested by me on:
 >
-> Device - **Oppo** <br />
+> Device - **Oppo F19 Pro+** <br />
 > Android - **Android 13 (ColorOS)** <br />
 > CPU Type - **aarch64**
 
